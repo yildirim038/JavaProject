@@ -1,4 +1,4 @@
 package week1.assignment2;
 
-public class Workers {
+public interface  Workers {
 }

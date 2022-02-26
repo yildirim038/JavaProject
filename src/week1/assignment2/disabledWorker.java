@@ -1,4 +1,4 @@
 package week1.assignment2;
 
-public class disabledWorker {
+public class disabledWorker implements Workers {
 }
