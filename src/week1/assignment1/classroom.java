@@ -1,10 +1,12 @@
 package week1.assignment1;
 
+import java.util.Arrays;
+
 public class classroom {
-        private String[] teacher;
-        private String[][] students;
-        private String location;
-        private String name;
+        private final String[] teacher;
+        private final String[][] students;
+        private final String location;
+        private final String name;
 
 
     public classroom(String[] teacher, String[][] group1, String Ort, String zimmer) {
@@ -14,7 +16,7 @@ public class classroom {
         this.name=zimmer;
     }
     public String getClasses (){
-        return this.teacher +" "+this.students+" "+" location: "+this.location+" Sinif: "+this.name;
+        return Arrays.toString(this.teacher) +" "+ Arrays.deepToString(this.students) +" "+" location: "+this.location+" Sinif: "+this.name;
     }
 
 }
