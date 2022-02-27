@@ -1,8 +1,8 @@
 package week1.assignment2;
 
-public class goodWorker implements Workers {
-    private int hourlyCost = 40;
-    private int weeklyWork = 40;
+public class lazyWorker implements Workers {
+    private int hourlyCost = 23;
+    private int weeklyWork = 20;
     public int calculatePrice(){
         return this.hourlyCost * this.weeklyWork;
     }
