@@ -1,23 +1,24 @@
 package week1.assignment1;
+import java.time.LocalDate;
 public class application {
     public static void main(String[] args){
         String [][] Students = new String [][]{
-                {"Ahmet","Hakki","15/3/2007"},
-                {"Mehmet","Nafiz","4/3/2008"},
-                {"Recep","Sen","22/3/2008"},
-                {"Ugur","Yilmaz","16/8/2008"},
-                {"Naz","Nazli","12/12/2008"},
-                {"Emin","Demir","11/11/2008"},
-                {"Kazim","Karabekir","12/6/2006"},
-                {"Erdal","Kemirgen","12/3/2009"},
-                {"Hatice","Betül","15/3/2007"},
-                {"Feride","Kesin","22/3/2008"},
+                {"Ahmet","Hakki", String.valueOf(LocalDate.parse("2008-11-03"))},
+                {"Mehmet","Nafiz",String.valueOf(LocalDate.parse("2008-10-10"))},
+                {"Recep","Sen",String.valueOf(LocalDate.parse("2008-09-09"))},
+                {"Ugur","Yilmaz",String.valueOf(LocalDate.parse("2008-04-22"))},
+                {"Naz","Nazli",String.valueOf(LocalDate.parse("2008-12-19"))},
+                {"Emin","Demir",String.valueOf(LocalDate.parse("2008-07-22"))},
+                {"Kazim","Karabekir",String.valueOf(LocalDate.parse("2008-09-11"))},
+                {"Erdal","Kemirgen",String.valueOf(LocalDate.parse("2008-11-23"))},
+                {"Hatice","Betül",String.valueOf(LocalDate.parse("2008-09-08"))},
+                {"Feride","Kesin",String.valueOf(LocalDate.parse("2008-11-03"))},
 
         };
 
         String [][] Teachers = new String[][]{
-                {"Arif","Karaibo","22/1/1982","Matemetik"},
-                {"Mehmet","Hamdi","15/3/1986","Ingilizce"}
+                {"Arif","Karaibo",String.valueOf(LocalDate.parse("1987-05-15")),"Matemetik"},
+                {"Mehmet","Hamdi",String.valueOf(LocalDate.parse("1976-01-12")),"Ingilizce"}
         };
 
         String[][] group1= {Students[0],Students[1],Students[2],Students[3],Students[4]};
